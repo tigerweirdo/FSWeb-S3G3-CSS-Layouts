@@ -1,1 +1,132 @@
-/* CSS stillerinizi buraya girin */
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ========================================================================================================= */
+
+.sayfa {
+    margin: 0rem 15rem;
+    border: 2px solid #00000063;
+    background-color: rgba(106, 99, 107, 0.485);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-left: 5%;
+    padding-top: 2%;
+    margin-bottom: 2%;
+}
+
+header h2 {
+    font-size: 2rem;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.baslik {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5%;
+    border-bottom: 2px solid #13806583;
+    height: 30%;
+}
+
+.baslik-eleman {
+    flex: 1;
+}
+
+
+a {
+    padding: 0.5rem 1rem;
+    background: #00f3c38b;
+    margin-bottom: 1%;
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover { 
+    background-color: #003180;
+    color: white;
+}
+
+.bar {
+    border-bottom: 2px solid #34568B;
+    background-color: #984747a7;
+}
+
+header nav {
+    margin-left: 2rem;
+}
+
+.bir {
+    display: flex;
+    align-items: flex-end;
+}
+
+.bir article {
+    width: 40%;
+    margin-left: 5%;
+    margin-bottom: 1rem;
+}
+
+.bir img {
+    width: 48%;
+    height: 300px;
+    margin: 0.5rem;
+}
+
+.bir h2 {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.bir a {
+    padding: 0.5rem 2rem;
+}
+
+.iki {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+}
+
+
+.iki img {
+    width: 220px;
+    height: 200px;
+}
+
+h3 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    border-top: 2px solid x #34568B;
+    padding: 2rem;
+}
