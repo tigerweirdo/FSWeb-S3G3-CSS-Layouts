@@ -1,0 +1,8 @@
+.enust {
+    width: 100%;
+    height: 1000px;
+    background:rgba(137, 43, 226, 0.168)
+}
+.enust.logo{
+    font-size: 5cm;
+}
