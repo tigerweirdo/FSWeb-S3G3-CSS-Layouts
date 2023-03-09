@@ -1,10 +1,11 @@
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #444444;
 	line-height: 1;
 }
 ol, ul {
@@ -23,110 +24,207 @@ table {
 	border-spacing: 0;
 }
 
-/* ========================================================================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-.sayfa {
-    margin: 0rem 15rem;
-    border: 2px solid #00000063;
-    background-color: rgba(106, 99, 107, 0.485);
+html {
+    font-size: 62.5%;
 }
 
-h1 {
+/*  =======================================================  */
+
+body {
+    width: 98%;
+    margin: auto;
+    border: 0.2rem solid black;
+    border-radius: 2vw;
+    line-height: 1.6;
+}
+
+header {
+    border-bottom: 0.2rem solid black;
+}
+
+header h1 {
     font-size: 3rem;
-    margin-left: 5%;
-    padding-top: 2%;
-    margin-bottom: 2%;
+    margin: 2rem 0 2rem 4rem;
 }
 
-header h2 {
-    font-size: 2rem;
-    display: inline-block;
-    font-weight: bold;
-}
-
-.baslik {
+header nav ul {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5%;
-    border-bottom: 2px solid #13806583;
-    height: 30%;
+    flex-wrap: wrap;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
 }
 
-.baslik-eleman {
-    flex: 1;
-}
-
-
-a {
-    padding: 0.5rem 1rem;
-    background: #00f3c38b;
-    margin-bottom: 1%;
-    display: inline-block;
+header nav ul a {
     text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    background-color: blanchedalmond;
+    color: black;
+    display: block;
+    width: 10rem;
+    text-align: center;
 }
 
-a:hover { 
-    background-color: #003180;
-    color: white;
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1vw;
 }
 
-.bar {
-    border-bottom: 2px solid #34568B;
-    background-color: #984747a7;
-}
-
-header nav {
-    margin-left: 2rem;
-}
-
-.bir {
+main .bir {
     display: flex;
     align-items: flex-end;
 }
 
-.bir article {
-    width: 40%;
-    margin-left: 5%;
-    margin-bottom: 1rem;
+main .bir img {
+    display: block;
+    width: 49.5%;
+    aspect-ratio: 1.6;
+    border-radius: 1vw;
 }
 
-.bir img {
-    width: 48%;
-    height: 300px;
-    margin: 0.5rem;
+main .bir div {
+    width: 50%;
+    border-radius: 2%;
+    padding: 0 5%;
 }
 
-.bir h2 {
+main .bir div h2 {
     font-size: 2rem;
-    margin-left: 1rem;
 }
 
-.bir a {
-    padding: 0.5rem 2rem;
+main ,.bir div a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    background-color: blanchedalmond;
+    color: black;
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
-.iki {
+main .bir div p {
+    font-size: 2rem;
+}
+
+main .iki {
     display: flex;
     justify-content: space-between;
-    margin: 0.5rem;
+    gap: 1%;
 }
 
-
-.iki img {
-    width: 220px;
-    height: 200px;
+main .iki div {
+    width: 24%;
 }
 
-h3 {
-    font-size: 1rem;
-    text-align: center;
-    margin-bottom: 2rem;
+main .iki img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 1vw;
+}
+
+main .iki div h3 {
+    font-size: 1.5rem;
     font-weight: bold;
+    text-align: center;
+    margin: 1rem 0;
 }
 
-footer {
+footer h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
     text-align: center;
-    border-top: 2px solid x #34568B;
-    padding: 2rem;
+    margin: 1.5rem 0;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    background-color: blanchedalmond;
+    color: black;
+    display: block;
+    width: 10rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+@media(max-width: 1000px) {
+
+    main .iki div {
+        width: 49%;
+
+    }
+
+    main .bir img {
+        width: 49%;
+    }
+
+    body {
+        line-height: 1.2;
+    }
+}
+
+@media(max-width: 850px) {
+
+    main .bir div {
+        width: 100%;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    main .bir h2 {
+        margin-bottom: 2rem;
+    }
+
+    main .iki div {
+        width: 100%;
+    }
+    
+    main .bir img {
+        width: 100%;
+    }
+    
+    .bir div h2 {
+        text-align: center;
+    }
+}
+
+@media(max-width: 520px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header h1 {
+        margin: 0;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin: 1rem 0;
+    }
+
+    header nav ul a {
+
+        margin: auto;
+    }
 }
